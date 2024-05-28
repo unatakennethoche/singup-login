@@ -1,0 +1,86 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+ 
+}
+
+.container{
+  max-width: 700px;
+  margin: 10px auto;
+  background-color:blue;
+text-align: center;
+border-radius: 5px;
+}
+
+.error-span{
+color:rgb(123, 71, 71);
+margin-bottom: 10px;
+}
+
+
+.login-error-span{
+  color: red;
+margin-bottom: 10px;
+display: block;
+}
+
+.signup{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+ }
+ 
+ label{
+     font-size: 30px;
+     font-weight: 900;
+ }
+ 
+ input{
+     width: 300px;
+     padding: 10px;
+     text-align: center;
+     margin:10px auto;
+     border-radius: 5px;
+     border: none;
+ }
+ 
+ .signup-button{
+     background-color: white;
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: none;
+     font-size: 15px;
+     font-weight: 900;
+     
+ }
+
+ footer{
+  /* background-color: white; */
+  color: black;
+  height: 50px;
+
+}
+
+footer div{
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+ 
+ @media screen and (max-width: 595px){
+     .product{
+         width:90%;
+         
+     }
+ }
