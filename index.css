@@ -23,6 +23,9 @@ color:rgb(123, 71, 71);
 margin-bottom: 10px;
 }
 
+.error-message{
+  border-color:red;
+}
 
 .login-error-span{
   color: red;

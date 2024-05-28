@@ -65,22 +65,24 @@ const loginEmail=document.getElementById("login-email");
 const loginPass=document.getElementById("login-pass");
 const loginBtn=document.getElementById("login-btn")
 
-const validateLogin=()=>{
-
-
+const validateLogin=(e)=>{
+e.preventDefault()
 const users = JSON.parse(localStorage.getItem("users")) || [];
     
 
 const user=users.find((user)=>user.email===loginEmail.value && user.password===loginPass.value);
 if(user){
-  console.log("yes")
-  alert("You login successfully")
+  document.querySelectorAll(".login-error-span")[0].style.display="none"
+alert("Your login is successful");
+loginForm.reset()
+
 }
 else{
+  
 document.querySelectorAll(".login-error-span")[0].textContent="Your Email or password is Invalid"
+loginForm.reset()
 }
 
-document.querySelectorAll(".login-error-span")[1].textContent="Your Email or password is Invalid"
 }
 
 loginForm.addEventListener("submit",validateLogin )
